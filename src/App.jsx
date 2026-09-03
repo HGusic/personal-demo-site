@@ -44,7 +44,7 @@ const experience = [
 
 const projects = [
   {
-    title: 'Retrieval Augmented Generation for EU4',
+    title: 'RAG for EU4',
     description:
       'Ask questions about Europa Universalis 4 strategy game using the wiki — type a question in your browser instead of searching pages yourself. Built with a wiki ingestion pipeline, retrieval-augmented generation, and a Dockerized local stack.',
     tech: 'Python · RAG · Docker · Ollama',
@@ -87,11 +87,8 @@ function App() {
             I build reliable systems, solutions, and data driven tools.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#about">
-              View experience
-            </a>
             <a
-              className="button button-ghost"
+              className="button"
               href="https://github.com/HGusic"
               target="_blank"
               rel="noreferrer"
