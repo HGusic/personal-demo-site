@@ -1,0 +1,48 @@
+:root {
+  --ink: #14201a;
+  --muted: #4d5a52;
+  --paper: #eceeeb;
+  --line: #c9d0cb;
+  --wash: #d7e0d9;
+  --accent: #1f4d3a;
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 70% 45% at 0% 0%, var(--wash), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 100% 10%, #cfd8d2, transparent 50%),
+    var(--paper);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}

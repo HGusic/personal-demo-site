@@ -1,0 +1,5 @@
+node_modules
+dist
+site.zip
+.DS_Store
+*.local
