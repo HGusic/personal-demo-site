@@ -94,6 +94,7 @@
     padding-bottom: 1.75rem;
   }
 
+  #professional-projects.section,
   #projects.section {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
@@ -204,6 +205,29 @@
   color: var(--paper);
 }
 
+.button-github {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+.button-github:hover {
+  background: transparent;
+  color: #111;
+}
+
+.button-linkedin {
+  border-color: #0a66c2;
+  background: #0a66c2;
+  color: #fff;
+}
+
+.button-linkedin:hover {
+  background: #004182;
+  border-color: #004182;
+  color: #fff;
+}
+
 .section {
   padding: 3rem 0;
   border-bottom: 1px solid var(--line);
@@ -305,6 +329,7 @@
   padding-bottom: 1.5rem;
 }
 
+#professional-projects.section,
 #projects.section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -397,6 +422,20 @@
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
   font-size: 0.8rem;
+}
+
+.button-yellow {
+  border-color: #e6c200;
+  background: #f5d000;
+  color: var(--ink);
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+}
+
+.button-yellow:hover {
+  background: #f5d000;
+  color: var(--ink);
 }
 
 .contact-list {

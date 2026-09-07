@@ -42,7 +42,31 @@ const experience = [
   },
 ]
 
+const professionalProjects = [
+  {
+    title: 'Dentistry Job Portal',
+    description:
+      'Job Portal for a local dental business with public listings and applications plus an employer admin for creating, editing, and closing postings. Agentic workflows allow automated filtering and communication with the most qualified candidates. Dual-host public/admin routing, Prisma-backed Postgres, and S3-compatible resume storage ready for AWS.',
+    tech: 'Next.js · Prisma · PostgreSQL · AWS S3 · NextAuth',
+    href: 'https://github.com/HGusic/job-portal',
+  },
+]
+
 const projects = [
+  {
+    title: 'Premier League Team Stats Visualizer',
+    description:
+      'Local-first app that ingests Premier League club stats from ESPN into SQLite and visualizes ranked radar profiles across defense, offense, possession, and more.',
+    tech: 'Next.js · FastAPI · SQLite · Recharts',
+    href: 'https://github.com/HGusic/premier-league-team-stats-visualizer',
+  },
+  {
+    title: '3D Print File Generator',
+    description:
+      'Browser-based parametric modeler for printable parts — choose a shape, tweak dimensions, preview in 3D, and download STL files without AutoCAD.',
+    tech: 'TypeScript · Three.js · Vite',
+    href: 'https://github.com/HGusic/3d-print-file-generator',
+  },
   {
     title: 'Retrieval Augmented Generation for EU4',
     description:
@@ -87,11 +111,8 @@ function App() {
             I build reliable systems, solutions, and data driven tools.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#about">
-              View experience
-            </a>
             <a
-              className="button button-ghost"
+              className="button button-github"
               href="https://github.com/HGusic"
               target="_blank"
               rel="noreferrer"
@@ -99,7 +120,7 @@ function App() {
               GitHub
             </a>
             <a
-              className="button button-ghost"
+              className="button button-linkedin"
               href="https://www.linkedin.com/in/harisgusic123"
               target="_blank"
               rel="noreferrer"
@@ -161,6 +182,34 @@ function App() {
               ))}
             </ul>
           </div>
+        </section>
+
+        <section id="professional-projects" className="section">
+          <h2>Professional Projects</h2>
+          <ul className="project-list">
+            {professionalProjects.map((project) => (
+              <li key={project.title} className="project">
+                <div className="project-body">
+                  <div className="project-top">
+                    <h3>{project.title}</h3>
+                    <a
+                      className="button project-button"
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View on GitHub
+                    </a>
+                    <span className="button project-button button-yellow" aria-disabled="true">
+                      Only Non-Proprietary code available to public
+                    </span>
+                  </div>
+                  <p>{project.description}</p>
+                  <span className="tech">{project.tech}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section id="projects" className="section">
